@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../EM/.idea/EM.iml" filepath="$PROJECT_DIR$/../EM/.idea/EM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GatedAttentionQA/.idea/GatedAttentionQA.iml" filepath="$PROJECT_DIR$/../GatedAttentionQA/.idea/GatedAttentionQA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ImageCaptionGeneration/.idea/ImageCaptionGeneration.iml" filepath="$PROJECT_DIR$/../ImageCaptionGeneration/.idea/ImageCaptionGeneration.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/Lab3(2)/.idea/Lab3(2).iml" filepath="$USER_HOME$/Downloads/Lab3(2)/.idea/Lab3(2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LanguageEvolutionFramework/.idea/LanguageEvolutionFramework.iml" filepath="$PROJECT_DIR$/../LanguageEvolutionFramework/.idea/LanguageEvolutionFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LanguageModel/.idea/LanguageModel.iml" filepath="$PROJECT_DIR$/../LanguageModel/.idea/LanguageModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LanguageModelInvestigator/.idea/LanguageModelInvestigator.iml" filepath="$PROJECT_DIR$/../LanguageModelInvestigator/.idea/LanguageModelInvestigator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NeuroSemantics.iml" filepath="$PROJECT_DIR$/.idea/NeuroSemantics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SaMosiGAN/.idea/SaMosiGAN.iml" filepath="$PROJECT_DIR$/../SaMosiGAN/.idea/SaMosiGAN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Sequence2Sequence/.idea/Sequence2Sequence.iml" filepath="$PROJECT_DIR$/../Sequence2Sequence/.idea/Sequence2Sequence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SequentialNeuroSemantics/.idea/SequentialNeuroSemantics.iml" filepath="$PROJECT_DIR$/../SequentialNeuroSemantics/.idea/SequentialNeuroSemantics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../VoxelRepresentation/.idea/VoxelRepresentation.iml" filepath="$PROJECT_DIR$/../VoxelRepresentation/.idea/VoxelRepresentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WordRepresentation/.idea/WordRepresentation.iml" filepath="$PROJECT_DIR$/../WordRepresentation/.idea/WordRepresentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lm1b/.idea/lm1b.iml" filepath="$PROJECT_DIR$/../lm1b/.idea/lm1b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lm_1b/.idea/lm_1b.iml" filepath="$PROJECT_DIR$/../lm_1b/.idea/lm_1b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tensor2tensor/.idea/tensor2tensor.iml" filepath="$PROJECT_DIR$/../tensor2tensor/.idea/tensor2tensor.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+data
+data/*
+checkpoint
+checkpoint/*
+.DS_Store
+*.npy
+__pycache__
