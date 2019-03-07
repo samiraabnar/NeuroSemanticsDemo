@@ -1,4 +1,6 @@
 data
+models
+models/*
 data/*
 checkpoint
 checkpoint/*
