@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../LanguageEvolutionFramework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SaMosiGAN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Sequence2Sequence" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SequentialNeuroSemantics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../lm1b" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../lm_1b" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tensor2tensor" vcs="Git" />
+  </component>
+</project>

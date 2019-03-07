@@ -6,7 +6,7 @@ checkpoint
 checkpoint/*
 .DS_Store
 *.npy
-__pycache
 *.zip
 *pyc
 .idea
+__pycache__
