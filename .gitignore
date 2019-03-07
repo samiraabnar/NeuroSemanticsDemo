@@ -1,0 +1,12 @@
+data
+models
+models/*
+data/*
+checkpoint
+checkpoint/*
+.DS_Store
+*.npy
+__pycache
+*.zip
+*pyc
+.idea
