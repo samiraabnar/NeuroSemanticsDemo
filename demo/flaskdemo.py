@@ -4,7 +4,10 @@ import base64
 from flask import Flask, jsonify, render_template, request
 from flask_bootstrap import Bootstrap
 from scipy.spatial import *
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import axes3d
 from pylab import *
+
 
 import tf_LRModel_reversed
 import tf_LRModel_GPU

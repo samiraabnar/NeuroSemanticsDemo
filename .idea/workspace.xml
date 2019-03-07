@@ -77,12 +77,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SequentialNeuroSemantics/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2383">
+            <state relative-caret-position="15">
               <caret line="21" column="115" lean-forward="false" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="115" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flaskdemo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,7 +215,6 @@
         <option value="$PROJECT_DIR$/demo/templates/index.html" />
         <option value="$PROJECT_DIR$/src/tf_main_reversed_deps_for_all.py" />
         <option value="$PROJECT_DIR$/src/plot_brain_activations.py" />
-        <option value="$PROJECT_DIR$/demo/flaskdemo.py" />
         <option value="$PROJECT_DIR$/../SaMosiGAN/src/main.py" />
         <option value="$PROJECT_DIR$/../SaMosiGAN/src/model_ToM_cycle.py" />
         <option value="$PROJECT_DIR$/../SequentialNeuroSemantics/src/LM_Insperctor.py" />
@@ -229,6 +240,7 @@
         <option value="$PROJECT_DIR$/../SequentialNeuroSemantics/src/linear_main.py" />
         <option value="$PROJECT_DIR$/../SequentialNeuroSemantics/src/LinearMapper.py" />
         <option value="$PROJECT_DIR$/../SequentialNeuroSemantics/src/HarryPotterDataProcessing.py" />
+        <option value="$PROJECT_DIR$/demo/flaskdemo.py" />
       </list>
     </option>
   </component>
@@ -238,7 +250,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="101" />
     <option name="y" value="37" />
     <option name="width" value="1280" />
@@ -260,23 +272,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="NeuroSemantics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuroSemantics" type="462c0819:PsiDirectoryNode" />
+              <item name="NeuroSemanticsDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeuroSemanticsDemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NeuroSemantics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuroSemantics" type="462c0819:PsiDirectoryNode" />
+              <item name="NeuroSemanticsDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeuroSemanticsDemo" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -628,15 +640,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="37" width="1280" height="728" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="727" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4971335" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.509693" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5129241" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31161973" sideWeight="0.74283373" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.49030694" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.48707592" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26655897" sideWeight="0.4560185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27059773" sideWeight="0.4560185" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -832,12 +845,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo/flaskdemo.py</url>
-          <line>87</line>
+          <line>89</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo/flaskdemo.py</url>
-          <line>74</line>
+          <line>76</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -905,25 +918,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#4564#5307#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SaMosiGAN/src/model_ToM_cycle.py" />
-    <entry file="file://$PROJECT_DIR$/../SaMosiGAN/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../SaMosiGAN/src/main.py" />
     <entry file="file://$PROJECT_DIR$/src/Glove2BrainActivation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1109,27 +1105,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/DataUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/VanillaIntendedMapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/DataUtil.py" />
+    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/main.py" />
+    <entry file="file://$PROJECT_DIR$/../LanguageModelInvestigator/src/VanillaIntendedMapper.py" />
     <entry file="file://$PROJECT_DIR$/../SequentialNeuroSemantics/src/train_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1245,9 +1223,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../SequentialNeuroSemantics/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2383">
+        <state relative-caret-position="15">
           <caret line="21" column="115" lean-forward="false" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="115" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
