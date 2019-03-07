@@ -1,13 +1,8 @@
 flask
 flask_bootstrap
 numpy
-gzip
-pickle
 funcy
-pylab
 scipy
 tensorflow
-base64
-csv
 sklearn
 matplotlib

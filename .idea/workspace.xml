@@ -87,15 +87,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flaskdemo.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flaskdemo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="259" column="62" lean-forward="true" selection-start-line="259" selection-start-column="62" selection-end-line="259" selection-end-column="62" />
+            <state relative-caret-position="178">
+              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#462#923#0" expanded="false" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#457#918#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tf_LRModel_GPU.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tf_LRModel_GPU.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tf_LRModel_GPU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="238" column="44" lean-forward="false" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -138,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/tf_LRModel_reversed.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+              <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -175,16 +185,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
               <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VanillaIntendedMapper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SequentialNeuroSemantics/src/VanillaIntendedMapper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -239,7 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Sequence2Sequence/seq2seq/src/Seq2Seq.py" />
         <option value="$PROJECT_DIR$/../Sequence2Sequence/seq2seq/src/train.py" />
         <option value="$PROJECT_DIR$/../GatedAttentionQA/src/Bi_LSTM.py" />
         <option value="$PROJECT_DIR$/../GatedAttentionQA/src/main_test.py" />
@@ -288,8 +287,9 @@
         <option value="$PROJECT_DIR$/../SequentialNeuroSemantics/src/HarryPotterDataProcessing.py" />
         <option value="$PROJECT_DIR$/src/WordEmbeddingLayer.py" />
         <option value="$PROJECT_DIR$/src/tf_LRModel_reversed.py" />
-        <option value="$PROJECT_DIR$/demo/flaskdemo.py" />
         <option value="$PROJECT_DIR$/src/tf_LRModel_GPU.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/demo/flaskdemo.py" />
       </list>
     </option>
   </component>
@@ -328,16 +328,6 @@
             <path>
               <item name="NeuroSemanticsDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeuroSemanticsDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeuroSemanticsDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuroSemanticsDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeuroSemanticsDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuroSemanticsDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -788,12 +778,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo/flaskdemo.py</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo/flaskdemo.py</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -823,13 +813,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/voxel_accuracy_analyse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda/lib/python3.6/site-packages/werkzeug/serving.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -1152,7 +1135,7 @@
     <entry file="file://$PROJECT_DIR$/src/tf_LRModel_reversed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -1167,23 +1150,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
+    <entry file="file://$PROJECT_DIR$/src/tf_LRModel_GPU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="259" column="62" lean-forward="true" selection-start-line="259" selection-start-column="62" selection-end-line="259" selection-end-column="62" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#462#923#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tf_LRModel_GPU.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="238" column="44" lean-forward="false" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/flaskdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#457#918#0" expanded="false" />
           </folding>
         </state>
       </provider>

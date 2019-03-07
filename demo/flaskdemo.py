@@ -1,4 +1,6 @@
+import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import axes3d
 import io
 import base64
 from flask import Flask, jsonify, render_template, request
@@ -9,15 +11,14 @@ import sys
 from scipy import *
 from scipy.spatial import *
 
+sys.path.append("../src")
 import tf_LRModel_GPU
+import tf_LRModel_reversed
 from WordEmbeddingLayer import *
 from functions import *
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import axes3d
+
 from pylab import *
 
-import tf_LRModel_reversed
 
 class ExpSetup(object):
     def __init__(self,
