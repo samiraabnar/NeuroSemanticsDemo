@@ -1,18 +1,23 @@
-import csv
+import matplotlib.pyplot as plt
 import io
 import base64
 from flask import Flask, jsonify, render_template, request
 from flask_bootstrap import Bootstrap
+
+
+import sys
+from scipy import *
 from scipy.spatial import *
+
+import tf_LRModel_GPU
+from WordEmbeddingLayer import *
+from functions import *
+import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d
 from pylab import *
 
-
 import tf_LRModel_reversed
-import tf_LRModel_GPU
-from WordEmbeddingLayer import *
-from functions import *
 
 class ExpSetup(object):
     def __init__(self,
@@ -32,12 +37,13 @@ class ExpSetup(object):
 
 
 
-
+DATA_DIR = "../data/"
+MODEL_DIR = "../models/"
 
 
 expSetup = ExpSetup(learning_rate=0.001, batch_size=29, number_of_epochs=700)
 
-fMRI_data_path = "data/"
+fMRI_data_path = DATA_DIR
 fMRI_data_filename = "data_"
 fMRI_data_postfix = ".csv"
 subject_id = str(1)
@@ -56,16 +62,16 @@ x_train, y_train = x_all, y_all
 lrm = tf_LRModel_GPU.LRModel(x_train.shape[1], y_train.shape[1], learning_rate=expSetup.learning_rate,
                   hidden_dim=y_train.shape[1], training_steps=expSetup.number_of_epochs,
                   batch_size=expSetup.batch_size)
-lrm.load_model("models/glove_all.model")
+lrm.load_model(MODEL_DIR+"glove_all.model")
 
 expSetup_reversed = ExpSetup(learning_rate=0.01, batch_size=29, number_of_epochs=2000)
 
 
 lrm_reversed = tf_LRModel_reversed.LRModel(y_train.shape[1], x_train.shape[1], learning_rate= expSetup_reversed.learning_rate,hidden_dim=x_train.shape[1],training_steps=expSetup_reversed.number_of_epochs, batch_size=expSetup_reversed.batch_size)
-lrm_reversed.load_model("models/glove_reversed_all_2.model")
+lrm_reversed.load_model(MODEL_DIR+"glove_reversed_all_2.model")
 
 wem = WordEmbeddingLayer()
-wem.load_embeddings_from_glove_file(filename="data/glove.6B.300d.txt", filter=[], dim=300)
+wem.load_embeddings_from_glove_file(filename=DATA_DIR+"glove.6B.300d.txt", filter=[], dim=300)
 #wem.load_filtered_embedding("../data/glove_all_6B_300d")  # neuro_words
 
 
@@ -79,7 +85,7 @@ word_tree_cheat = cKDTree(x_all)
 
 
 coords = []
-with open('data/coords', 'r') as f:
+with open('../data/coords', 'r') as f:
     reader = csv.reader(f)
     coords = list(reader)
 coords = np.asarray(coords)
