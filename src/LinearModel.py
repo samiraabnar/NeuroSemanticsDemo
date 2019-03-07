@@ -1,23 +1,16 @@
 import keras
-from numpy import genfromtxt
 import csv
-import sys
 from keras.layers import Dense
 from keras.models import Sequential
-from keras.regularizers import l2, activity_l2
-import numpy as np
-from scipy.stats.stats import pearsonr
+
 from scipy import *
-from scipy.spatial.distance import *
 from scipy.spatial import *
-sys.path.append('../../')
-from matplotlib import pyplot as plt
 import matplotlib.pyplot as plt
 from matplotlib import offsetbox
 from sklearn import manifold
 
-from NeuroSemantics.src.WordEmbeddingLayer import *
-from NeuroSemantics.src.functions import *
+from WordEmbeddingLayer import *
+from functions import *
 
 def plot_embedding(features, classes, labels, title=None):
     x_min, x_max = np.min(features, 0), np.max(features, 0)

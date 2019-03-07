@@ -1,13 +1,9 @@
 import numpy as np
-import funcy
 from funcy import project
 import pickle
 import gzip
 
-import sys
-sys.path.append('../../')
-from Util.util.math.MathUtil import *
-
+from util.math.math_util import *
 
 class WordEmbeddingLayer(object):
 

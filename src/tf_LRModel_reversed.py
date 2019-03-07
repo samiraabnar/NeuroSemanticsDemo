@@ -1,15 +1,9 @@
-import os
-
-import itertools
-import numpy as np
-import pylab
 import scipy
 import tensorflow as tf
 import csv
 from scipy import *
 from WordEmbeddingLayer import *
 from functions import *
-from sklearn.model_selection import KFold, cross_val_score
 
 
 class LRModel(object):
@@ -172,7 +166,7 @@ class LRModel(object):
 
 
         words_1 = []
-        with open('../data/words', 'r') as f:
+        with open('data/words', 'r') as f:
             reader = csv.reader(f)
             words_1 = list(reader)
 
@@ -195,7 +189,7 @@ class LRModel(object):
 
 
         if mode =='limited':
-            with open('../data/experimental_wordList.csv', 'r') as f:
+            with open('data/experimental_wordList.csv', 'r') as f:
                 word_set = [w[0] for w in list(csv.reader(f))]
 
         words = np.asarray(words)
@@ -207,19 +201,19 @@ class LRModel(object):
 
         if type == 'glove':
             wem = WordEmbeddingLayer()
-            wem.load_filtered_embedding("../data/neuro_words_glove_6B_300d") #neuro_words
+            wem.load_filtered_embedding("data/neuro_words_glove_6B_300d") #neuro_words
             embedded_words = wem.embed_words(words)
         elif type == 'word2vec':
             wem = WordEmbeddingLayer()
-            wem.load_filtered_embedding("../data/neuro_words_word2vec")
+            wem.load_filtered_embedding("data/neuro_words_word2vec")
             embedded_words = wem.embed_words(words)
         elif type == 'fasttext':
             wem = WordEmbeddingLayer()
-            wem.load_filtered_embedding("../data/neuro_words_fasttext")
+            wem.load_filtered_embedding("data/neuro_words_fasttext")
             embedded_words = wem.embed_words(words)
         elif type == 'lexvec':
             wem = WordEmbeddingLayer()
-            wem.load_filtered_embedding("../data/neuro_words_lexvec")
+            wem.load_filtered_embedding("data/neuro_words_lexvec")
             embedded_words = wem.embed_words(words)
         elif type == 'experimental':
             embedding_dic, embedded_words = get_word_representation(type='experimental',words=word_set)
@@ -229,7 +223,7 @@ class LRModel(object):
             embedding_dic, embedded_words = get_word_representation(type='F25', words=word_set)
         elif type == 'non-distributional':
             wem = WordEmbeddingLayer()
-            wem.load_filtered_embedding("../data/neuro_words_cnd")
+            wem.load_filtered_embedding("data/neuro_words_cnd")
             embedded_words = wem.embed_words(words)
 
 

@@ -1,25 +1,15 @@
-import matplotlib.pyplot as plt
+import csv
 import io
 import base64
 from flask import Flask, jsonify, render_template, request
 from flask_bootstrap import Bootstrap
-
-
-import sys
-from scipy import *
 from scipy.spatial import *
-
-sys.path.append("../src")
-
-import tf_LRModel_GPU
-from WordEmbeddingLayer import *
-from functions import *
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import axes3d
 from pylab import *
 
 import tf_LRModel_reversed
+import tf_LRModel_GPU
+from WordEmbeddingLayer import *
+from functions import *
 
 class ExpSetup(object):
     def __init__(self,
@@ -44,7 +34,7 @@ class ExpSetup(object):
 
 expSetup = ExpSetup(learning_rate=0.001, batch_size=29, number_of_epochs=700)
 
-fMRI_data_path = "../data/"
+fMRI_data_path = "data/"
 fMRI_data_filename = "data_"
 fMRI_data_postfix = ".csv"
 subject_id = str(1)
@@ -63,16 +53,16 @@ x_train, y_train = x_all, y_all
 lrm = tf_LRModel_GPU.LRModel(x_train.shape[1], y_train.shape[1], learning_rate=expSetup.learning_rate,
                   hidden_dim=y_train.shape[1], training_steps=expSetup.number_of_epochs,
                   batch_size=expSetup.batch_size)
-lrm.load_model("../glove_all.model")
+lrm.load_model("models/glove_all.model")
 
 expSetup_reversed = ExpSetup(learning_rate=0.01, batch_size=29, number_of_epochs=2000)
 
 
 lrm_reversed = tf_LRModel_reversed.LRModel(y_train.shape[1], x_train.shape[1], learning_rate= expSetup_reversed.learning_rate,hidden_dim=x_train.shape[1],training_steps=expSetup_reversed.number_of_epochs, batch_size=expSetup_reversed.batch_size)
-lrm_reversed.load_model("../glove_reversed_all_2.model")
+lrm_reversed.load_model("models/glove_reversed_all_2.model")
 
 wem = WordEmbeddingLayer()
-wem.load_embeddings_from_glove_file(filename="../data/glove.6B/glove.6B.300d.txt", filter=[], dim=300)
+wem.load_embeddings_from_glove_file(filename="data/glove.6B.300d.txt", filter=[], dim=300)
 #wem.load_filtered_embedding("../data/glove_all_6B_300d")  # neuro_words
 
 
@@ -86,7 +76,7 @@ word_tree_cheat = cKDTree(x_all)
 
 
 coords = []
-with open('../data/coords', 'r') as f:
+with open('data/coords', 'r') as f:
     reader = csv.reader(f)
     coords = list(reader)
 coords = np.asarray(coords)
@@ -291,30 +281,5 @@ def reset_plots():
 
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True)
-
-    """
-    angel = 180
-    zangle = 270
-
-    fig = plt.figure()
-    ax = fig.add_subplot("111", projection='3d')
-    plot_predicted_brain_activation = y_all[0]
-    #plot_predicted_brain_activation[plot_predicted_brain_activation > 0.5] += 0.4
-    #plot_predicted_brain_activation[plot_predicted_brain_activation > 0.1] += 0.5
-    #plot_predicted_brain_activation = np.tanh(plot_predicted_brain_activation)
-    plot_predicted_brain_activation[plot_predicted_brain_activation < 0] /= 10.0
-    indexes = np.where(plot_predicted_brain_activation > 0.1)[0]
-    plot_predicted_brain_activation[indexes] *= 1.3 + 0.3
-    plot_predicted_brain_activation[plot_predicted_brain_activation > 0.9] = 0.9
-    high_indexes = np.where(plot_predicted_brain_activation > 0.7)[0]
-    ax.scatter(np.asarray(coords, dtype=int)[:, [0]], np.asarray(coords, dtype=int)[:, [1]],
-               np.asarray(coords, dtype=int)[:, [2]],
-               s=1.0, cmap="jet", c=plot_predicted_brain_activation, alpha=0.9)
-    ax.scatter(np.asarray(coords, dtype=int)[high_indexes, [0]], np.asarray(coords, dtype=int)[high_indexes, [1]],
-               np.asarray(coords, dtype=int)[high_indexes, [2]],
-               s=1.0, cmap="jet", c=plot_predicted_brain_activation[high_indexes], alpha=1.0)
-    ax.view_init(zangle, angel)
-    ax.set_axis_off()
-    plt.show()
-    """
+    print("running on port ", sys.argv[1])
+    app.run(port=sys.argv[1], debug=True)
