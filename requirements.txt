@@ -6,3 +6,4 @@ scipy
 tensorflow
 sklearn
 matplotlib
+gunicorn
