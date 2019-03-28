@@ -1,5 +1,9 @@
 import numpy as np
+import matplotlib
+# set a non-interactive backend
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
 from mpl_toolkits.mplot3d import axes3d
 import io
 import base64
@@ -35,7 +39,6 @@ class ExpSetup(object):
         return "learning_rate: "+str(self.learning_rate)\
                + "batch_size: "+str(self.batch_size)\
             + "number_of_epochs: "+str(self.number_of_epochs)
-
 
 
 DATA_DIR = "../data/"
